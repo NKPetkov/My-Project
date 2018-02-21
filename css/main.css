@@ -1,0 +1,229 @@
+/*Preloader
+===============================*/
+
+.preloader {
+  background-color: darkgreen;
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 99999;
+}
+.loader {
+  color: #fff;
+  display: table-cell;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  opacity: 0.8;
+  vertical-align: middle;
+}
+.loader .bracket {
+  display: inline-block;
+  -webkit-animation: pulse 0.4s alternate infinite ease-in-out;
+  animation: pulse 0.4s alternate infinite ease-in-out;
+}
+.loader .text{
+	display: inline-block;
+	-webkit-animation: pulse 0.4s alternate infinite ease-in-out;
+	animation: pulse 0.4s alternate infinite ease-in-out;
+}
+@-webkit-keyframes pulse {
+  to {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
+@keyframes pulse {
+  to {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+/*Navbar
+===============================*/
+
+.ulist{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+    background-color: green;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+.list a{
+    float: left;
+    color: lavender;
+    text-decoration: none;
+    padding: 20px 30px;
+    padding-bottom:26px;
+}
+.list a:hover{
+    background-color: lightskyblue;
+}
+.list img{
+    float: left;
+}
+#navicon{
+    padding: 3px 30px;
+}
+.right{
+    float: right;
+    padding: 13px;
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: green;
+    color: lavender;
+    padding: 20px 30px;
+    padding-bottom:26px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    float: left;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: green;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: lavender;
+    height: auto;
+    width: 170px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: lightgreen;
+
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/*Body
+===========================================*/
+
+
+body{
+    background-color: #6d7c89;
+}
+
+
+/*Containers
+===========================================*/
+
+
+.containerStyle{
+    background-color: moccasin;
+    max-width:1960px;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #6d7c89;
+    border-radius:30px;
+	display: flex;
+	flex-direction: column;
+}
+.innerContainerStyle{
+    background-color: #ab8a6b;
+    max-width: 1900px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: moccasin;
+    border-radius:30px;
+    padding: 20px;
+    margin: 20px;
+}
+.top{
+    margin-top: 120px;
+}
+.containerTextFont{
+    font-size:25px;
+    font-weight: 400;
+}
+.containerTitleFont{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bolder;
+}
+.containerSecondTitleFont{
+    font-size: 30px;
+    font-weight: 600;
+}
+.containerBigTitleFont{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 45px;
+    text-align: center;
+    font-weight: bolder;
+}
+.afterHeader{
+		display: block;
+		height: 70px;
+		margin-top: -70px;
+		visibility: hidden;
+}
+:root {
+scroll-behavior: smooth;
+}
+.filmList{
+    list-style-type: square;
+    font-size: 25;
+}
+.text-aligning{
+    margin-top: 35px;
+}
+.text-to-avatar{
+    margin-left: -110px;
+}
+.avatarimg{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ab8a6b;
+    margin: 20px;
+    background-color: lightgray;
+}

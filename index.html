@@ -1,0 +1,143 @@
+<html>
+    
+
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <title>MyProject</title>
+        <link rel="stylesheet" href="css/main.css">
+		<script href="js/main.js"></script>
+    </head>
+
+
+    <body id="body" onload="myFunction()" style="margin: 0;">
+
+        <!--Preloader-->
+        <div id="loader-wrapper" class="preloader">
+            <div class="loader" id="br">
+                <span class="bracket">[</span><span class="text">Loading</span><span class="bracket">]</span>
+            </div>
+        </div>
+
+        <!--Header-->
+		<div id="myDiv" class="animate-bottom">	
+				<div class="header-wrap flex flex-middle">
+					<header class="header header-fixed">
+							<div>
+								<ul class="ulist">
+									<li class="list"><img src="boy.png" id="navicon"></li>
+									<li class="list" role="menuitem"><a href="#home">Home</a></li>
+									<li class="list" role="menuitem"><div class="dropdown">
+										<button class="dropbtn">Education</button>
+										<div class="dropdown-content">
+										  <a href="#education-ps">Primary School</a>
+										  <a href="#education-hs">High School</a>
+										</div>
+									  </div></li>
+									<li class="list" role="menuitem"><a href="#family">Family</a></li>
+									<li class="list" role="menuitem"><a href="#pets">Pets</a></li>
+									<li class="list" role="menuitem"><div class="dropdown">
+										<button class="dropbtn">Interests</button>
+										<div class="dropdown-content">
+										  <a href="#interests-hobby">Hobbies</a>
+										  <a href="#interests-ff">Favourite Films</a>
+										</div>
+									  </div></li>
+									<li class="right list"><h3>Nikolai Petkov</h3></li>
+								 </ul>
+							</div>
+					</header>
+				</div>
+			<div class="content-container">
+				<span id="home" class="afterHeader"></span>
+				<div>
+					<div class="containerStyle top">
+						<p class="containerBigTitleFont">Personal data</p>
+						<div class="innercontainerStyle">
+							<div class="row">
+								<div class="col-xl-5">
+									<div><img src="avatar.jpg" class="avatarimg"></div>
+								</div>
+								<div class="col-xl-7">
+									<p class="left text-aligning text-to-avatar"><span class="containerSecondTitleFont">Name: </span><span class="containerTextFont">Nikolai Petkov</span></p>
+									<p class="left text-to-avatar"><span class="containerSecondTitleFont">Date of birth: </span><span class="containerTextFont">19.11.1999</span></p>
+									<p class="left text-to-avatar"><span class="containerSecondTitleFont">Phone number: </span><span class="containerTextFont">0884696880</span></p>
+								</div>
+							</div>
+							<p><span class="containerSecondTitleFont">Country: </span><span class="containerTextFont">Bulgaria</span></p>
+							<p><span class="containerSecondTitleFont">City: </span><span class="containerTextFont">Sofia</span></p>
+							<p><span class="containerSecondTitleFont">Address: </span><span class="containerTextFont">Sofia, sq. Filipovtsi, st. Detelina, №4</span></p>
+							
+						</div>
+					</div>
+				</div>
+				<span id="education" class="afterHeader"></span>
+				<div id="education">
+					<div class="containerStyle">
+							<p class="containerBigTitleFont">Education</p>
+							<span id="education-ps" class="afterHeader"></span>
+						<div class="innercontainerStyle">
+							<p class="containerTitleFont">Primary school</p>
+							<p><span class="containerSecondTitleFont">Name: </span><span class="containerTextFont">77ps "St.St. Kiril and Metodi"</span></p>
+							<p></p><span class="containerSecondTitleFont">Address: </span><span class="containerTextFont">Sofia, sq. Filipovtsi, st. Treti Mart, №45</span></p>
+						</div>
+						<span id="education-hs" class="afterHeader"></span>
+						<div class="innercontainerStyle">
+							<p class="containerTitleFont">High school</p>
+							<p><span class="containerSecondTitleFont">Name: </span><span class="containerTextFont">Spge "John Attanasov"</span></p>
+							<p><span class="containerSecondTitleFont">Address: </span><span class="containerTextFont">Sofia, sq. Izgrev, st. Raiko Aleksiev, №48</span></p>
+						</div>
+					</div>
+				</div>
+				<span id="family" class="afterHeader"></span>
+				<div>
+					<div class="containerStyle">
+						<p class="containerBigTitleFont">Family</p>
+						<div class="innercontainerStyle">
+							<p><span class="containerSecondTitleFont">Mother:</span><span class="containerTextFont">Antoaneta Petkova</span></p>
+							<p><span class="containerSecondTitleFont">Father: </span><span class="containerTextFont">Krasimir Petkov</span></p>
+							<p><span class="containerSecondTitleFont">Brothers: </span><span class="containerTextFont">none</span></p>
+							<p><span class="containerSecondTitleFont">Sisters: </span><span class="containerTextFont">none</span></p>
+						</div>
+					</div>
+				</div>
+				<span id="pets" class="afterHeader"></span>
+				<div>
+					<div class="containerStyle">
+						<p class="containerBigTitleFont">Pets</p>
+						<div class="innercontainerStyle">
+							<p class="containerTitleFont">Dogs</p>
+							<p><span class="containerSecondTitleFont">Name: </span><span class="containerTextFont">Buki</span></p>
+							<p><span class="containerSecondTitleFont">Breed: </span><span class="containerTextFont">German Sheppard</span></p>
+							<p><span class="containerSecondTitleFont">Breed: </span><span class="containerTextFont">Male</span></p>
+							<p><span class="containerSecondTitleFont">Name: </span><span class="containerTextFont">Rona</span></p>
+							<p><span class="containerSecondTitleFont">Breed: </span><span class="containerTextFont">Bulgarian Beagle</span></p>
+							<p><span class="containerSecondTitleFont">Sex: </span><span class="containerTextFont">Female</span></p>
+						</div>
+					</div>
+				</div>
+				<span id="interests" class="afterHeader"></span>
+				<div>
+					<div class="containerStyle">
+						<p class="containerBigTitleFont">Interests</p>
+						<span id="interests-hobby" class="afterHeader"></span>
+						<div class="innercontainerStyle">
+							<p class="containerTitleFont">Hobbies</p>
+							<p><span class="containerSecondTitleFont">Sport: </span><span class="containerTextFont">Tae Kwon-Do</span></p>
+							<p><span class="containerSecondTitleFont">Other: </span><span class="containerTextFont">Reading, Proggraming, PC Gaming</span></p>
+						</div>
+						<span id="interests-ff" class="afterHeader"></span>
+						<div class="innercontainerStyle">
+							<p class="containerTitleFont">Favourite Films</p>
+							<ul class="filmList">
+								<li><p class="containerTextFont">You don't mess with the Zohan</p></li>
+								<li><p class="containerTextFont">Harry Potter</p></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="MyProject/smoothscroll.js"></script>
+	</body>
+</html>
